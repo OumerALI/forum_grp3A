@@ -6,5 +6,5 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/evagadi_forum_groupA_frontend/",
+  base: "/forum_grp3A/",
 });

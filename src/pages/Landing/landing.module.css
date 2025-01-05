@@ -1,0 +1,145 @@
+body{
+    background-image: url("https://www.evangadi.com/themes/humans/assets/images/misc/bg-svg-f.svg");
+    background-size: cover; 
+    background-position: center;
+    margin: 0; 
+}
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.form-container {
+  width: 50%;
+  height: 80%;
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-wrapper {
+  display: flex;
+  width: 200%;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+/* Sliding effect */
+.slide-in-left {
+  animation: slideInLeft 0.3s forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.3s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
+main .info {
+  width: 50%;
+  padding-right: 50px;
+}
+
+main .info h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+h1 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(310deg, #000000, #e33f00);
+}
+main .info h4{
+ color: #ff6600;
+}
+main .info p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+main .info button {
+  background: #ff6600;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+main .info button a {
+  text-decoration: none;
+  color: white;
+}
+
+main .info button:hover {
+  background: #cc5200;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; 
+        padding: 10px;
+    }
+
+    .form-container {
+        width: 90%; 
+        max-width: none; 
+    }
+
+    main .info h1 {
+        font-size: 22px; 
+    }
+
+    main .info p {
+        font-size: 12px; 
+    }
+
+    main .info button {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    main .info h1 {
+        font-size: 20px; 
+    }
+
+    main .info p {
+        font-size: 11px; 
+    }
+}
